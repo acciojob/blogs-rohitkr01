@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "Image")
 public class Image{
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String description;
     private String dimensions;

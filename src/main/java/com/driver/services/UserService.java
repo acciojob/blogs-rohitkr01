@@ -23,7 +23,7 @@ public class UserService {
         userRepository3.deleteById(userId);
     }
 
-    public User updateUser(Integer id, String password)  throws Exception{
+    public User updateUser(Integer id, String password) throws Exception{
         User user;
         if(!userRepository3.findById(id).isPresent()) {
            throw new Exception();
